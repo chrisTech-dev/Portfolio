@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: black;
+ 
+}
+
+.btn{
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgb(248,217,15);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+
+.btn-light{
+  
+  color: #fff;
+  transition: 0.3s;
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.btn:hover{
+  background-color: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-light:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
