@@ -90,6 +90,10 @@
         grid-template-columns: 1fr;
         padding: 0 1rem;
     }
+
+    .btc{
+        font-size: 2.2rem;
+    }
 }
 
 /* Keyframes for animation */
