@@ -33,11 +33,12 @@ const Navbar = () => {
         </ul>
         <img src={show ? pho : phone} alt="" onClick={() => setShow(!show)} className='hamburger'/>
         <ul className={show ? "nav-menu-mobile" : "no-menu"}>
-          <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-          <li><NavLink to="/project" activeClassName="active">Project</NavLink></li>
-          <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-          <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
-        </ul>
+          <li><NavLink to="/" activeClassName="active" onClick={() => setShow(false)}>Home</NavLink></li>
+          <li><NavLink to="/project" activeClassName="active" onClick={() => setShow(false)}>Project</NavLink></li>
+          <li><NavLink to="/about" activeClassName="active" onClick={() => setShow(false)}>About</NavLink></li>
+          <li><NavLink to="/contact" activeClassName="active" onClick={() => setShow(false)}>Contact</NavLink></li>
+       </ul>
+
       </div>
     </div>
   );

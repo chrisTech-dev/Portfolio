@@ -3,14 +3,11 @@
     position: fixed;
     z-index: 900;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition */
 }
 
 .cont.scrolled {
     background-color: rgba(90, 90, 90, 90.9);
-    /* Semi-transparent black */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    /* Optional shadow effect */
 }
 
 .container {
@@ -44,7 +41,6 @@
 
 .nav-menu li a {
     color: white;
-    /* Default link color */
     text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
@@ -52,25 +48,19 @@
 
 .nav-menu li a:hover {
     color: #f39c12;
-    /* Hover color */
     transform: translateY(-5px);
     letter-spacing: 2px;
-    /* Space out letters on hover */
 }
 
-/* Active link color */
 .nav-menu li a.active {
     color: yellow;
-    /* Active link color */
 }
 
 .container a h1::after {
     content: '|';
     animation: typingCursor 0.5s step-end infinite;
-    /* Typing cursor effect */
 }
 
-/* Keyframes for animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -167,86 +157,66 @@
     background-color: rgb(90, 90, 90);
     width: 15rem;
     height: 25rem;
-    /* Adjusted for responsiveness */
     padding-top: 2rem;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     animation: sli 0.8s;
 }
 
-@keyframes sli{
-    0%{
+@keyframes sli {
+    0% {
         transform: translateX(90%);
-        
     }
 
-    100%{
-        transform: translateX(-0%);
-        
+    100% {
+        transform: translateX(0%);
     }
 }
 
 .nav-menu-mobile li a.active {
     color: yellow;
-    /* Active link color */
 }
 
 .nav-menu-mobile a {
     color: white;
-    /* Mobile menu link color */
     font-size: 1.2rem;
-    /* Mobile menu link size */
 }
 
 .hamburger {
     height: 3rem;
-    /* Hamburger icon size */
     width: fit-content;
-    /* Fit content size */
     margin-right: 3rem;
-    /* Margin for spacing */
-    filter: brightness(0) invert(1)
+    filter: brightness(0) invert(1);
 }
-
-
 
 .no-menu {
     display: none;
-    /* Hide mobile menu when not in use */
 }
 
-/* Media Queries for responsiveness */
 @media screen and (max-width :1000px) {
     .nav-menu {
         display: none;
-        /* Hide desktop menu on small screens */
     }
 
     .nav-menu-mobile {
         display: flex;
-        /* Show mobile menu on small screens */
         z-index: 1000;
-        /* Ensure it appears above other elements */
     }
 }
 
 @media screen and (max-width :500px) {
     .container a h1 {
         font-size: 1.3rem;
-        /* Adjust heading size for small screens */
     }
 
     .hamburger {
         height: 2.1rem;
-        /* Adjust hamburger icon size for small screens */
         margin-right: 4rem;
-        /* Adjust margin for small screens */
     }
 }
 
 @media screen and (min-width :1000px) {
     .hamburger {
         display: none;
-        /* Hide hamburger icon on larger screens */
     }
 }
